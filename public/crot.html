@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><link rel="shortcut icon" href="http://localhost:3000/favicon/favicon.ico"><title>Modern Life Dating</title><meta name="next-head-count" content="4"><noscript data-n-css=""></noscript><script defer="defer" nomodule="" src="crot_files/polyfills.js"></script><script src="crot_files/webpack.js" defer="defer"></script><script src="crot_files/main.js" defer="defer"></script><script src="crot_files/_app.js" defer="defer"></script><script src="crot_files/index.js" defer="defer"></script><script src="crot_files/_buildManifest.js" defer="defer"></script><script src="crot_files/_ssgManifest.js" defer="defer"></script><script src="crot_files/_middlewareManifest.js" defer="defer"></script><style>/*
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+*/
+
+/* Font Imports */
+
+/* Brandon Grotesque */
+
+@font-face {
+	font-family: 'Brandon Grotesque';
+	font-weight: 400;
+	font-style: normal;
+	src: url('/fonts/brandon-grotesque/Brandon-Regular.otf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Brandon Grotesque';
+	font-weight: 400;
+	font-style: italic;
+	src: url(/_next/static/media/Brandon-Italic.19aa44ed.otf);
+	font-display: swap;
+}
+/*
+@font-face {
+	font-family: 'Brandon Grotesque';
+	font-weight: 700;
+	font-style: normal;
+	src: url('../public/fonts/brandon-grotesque/Brandon-Bold.otf');
+	font-display: swap;
+}
+Missing?
+
+@font-face {
+	font-family: 'Brandon Grotesque';
+	font-weight: 700;
+	font-style: italic;
+	src: url('../public/fonts/brandon-grotesque/Brandon-BoldItalic.otf');
+	font-display: swap;
+}
+*/
+@font-face {
+	font-family: 'Brandon Grotesque';
+	font-weight: 800;
+	font-style: normal;
+	src: url(/_next/static/media/Brandon-Black.53ec9865.otf);
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Brandon Grotesque';
+	font-weight: 800;
+	font-style: italic;
+	src: url(/_next/static/media/Brandon-BlackItalic.723c118e.otf);
+	font-display: swap;
+}
+
+/* Lakeshore */
+
+@font-face {
+	font-family: 'Lakeshore';
+	font-weight: 700;
+	font-style: normal;
+	src: url('/fonts/lakeshore/lakeshore-regular.ttf');
+	font-display: swap;
+}
+
+/* HTML and Body Styling */
+
+html,
+body {
+	--type-color-base: white;
+	--background-color-base: #22295E;
+	--hot-dude-hot-pink: #FD54FB;
+	--hot-dude-fusia: #F94588;
+}
+
+/* Base styles */
+
+html,
+body {
+	font-family: 'Brandon Grotesque', 'Arial', 'sans-serif';
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	line-height: 1.5;
+	color: var(--type-color-base);
+	background-color: var(--background-color-base);
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Nav Bar */
+.main-header{
+  display: flex;
+  flex-direction: row;
+  grid-gap: .5rem;
+  gap: .5rem;
+  align-items: center;
+  height: 4rem;
+}
+
+.main-header > h1 {
+  font-size:1.5rem;
+}
+
+.header-nav{
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.header-nav > ul {
+  list-style-type: none;
+}
+
+.list-item{
+  padding: 1rem;
+  display:  inline;
+  /*
+  border-radius: 25px;
+  */
+  font-size: 1.3rem;
+  margin-left: .5em;
+}
+.list-item:hover{
+  color: #F94588;
+  cursor: pointer;
+}
+
+/* Header Styling */
+.head-text{
+  font-family: 'Brandon Grotesque';
+  text-transform: uppercase;
+  letter-spacing: 0.24rem;
+}
+
+.h1{
+  font-size: 3rem;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zdHlsZXMvZ2xvYmFscy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBaUJDOztBQUVELGlCQUFpQjs7QUFFakIsc0JBQXNCOztBQUV0QjtDQUNDLGdDQUFnQztDQUNoQyxnQkFBZ0I7Q0FDaEIsa0JBQWtCO0NBQ2xCLHdEQUF3RDtDQUN4RCxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxnQ0FBZ0M7Q0FDaEMsZ0JBQWdCO0NBQ2hCLGtCQUFrQjtDQUNsQiw0Q0FBZ0U7Q0FDaEUsa0JBQWtCO0FBQ25CO0FBQ0E7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBaUJDO0FBQ0Q7Q0FDQyxnQ0FBZ0M7Q0FDaEMsZ0JBQWdCO0NBQ2hCLGtCQUFrQjtDQUNsQiw0Q0FBK0Q7Q0FDL0Qsa0JBQWtCO0FBQ25COztBQUVBO0NBQ0MsZ0NBQWdDO0NBQ2hDLGdCQUFnQjtDQUNoQixrQkFBa0I7Q0FDbEIsNENBQXFFO0NBQ3JFLGtCQUFrQjtBQUNuQjs7QUFFQSxjQUFjOztBQUVkO0NBQ0Msd0JBQXdCO0NBQ3hCLGdCQUFnQjtDQUNoQixrQkFBa0I7Q0FDbEIsa0RBQWtEO0NBQ2xELGtCQUFrQjtBQUNuQjs7QUFFQSwwQkFBMEI7O0FBRTFCOztDQUVDLHdCQUF3QjtDQUN4QixnQ0FBZ0M7Q0FDaEMsNEJBQTRCO0NBQzVCLHlCQUF5QjtBQUMxQjs7QUFFQSxnQkFBZ0I7O0FBRWhCOztDQUVDLHVEQUF1RDtDQUN2RCxnQkFBZ0I7Q0FDaEIsdUJBQXVCO0NBQ3ZCLGdCQUFnQjtDQUNoQiw2QkFBNkI7Q0FDN0IsOENBQThDO0VBQzdDLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUEsWUFBWTtBQUNaO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixlQUFVO0VBQVYsVUFBVTtFQUNWLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGdCQUFnQjtFQUNoQjs7R0FFQztFQUNELGlCQUFpQjtFQUNqQixpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOztBQUVBLG1CQUFtQjtBQUNuQjtFQUNFLGdDQUFnQztFQUNoQyx5QkFBeUI7RUFDekIsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGtCQUFrQjtBQUNwQiIsInNvdXJjZXNDb250ZW50IjpbIi8qXG5odG1sLFxuYm9keSB7XG4gIHBhZGRpbmc6IDA7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgU2Vnb2UgVUksIFJvYm90bywgT3h5Z2VuLFxuICAgIFVidW50dSwgQ2FudGFyZWxsLCBGaXJhIFNhbnMsIERyb2lkIFNhbnMsIEhlbHZldGljYSBOZXVlLCBzYW5zLXNlcmlmO1xufVxuXG5hIHtcbiAgY29sb3I6IGluaGVyaXQ7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuKiB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG4qL1xuXG4vKiBGb250IEltcG9ydHMgKi9cblxuLyogQnJhbmRvbiBHcm90ZXNxdWUgKi9cblxuQGZvbnQtZmFjZSB7XG5cdGZvbnQtZmFtaWx5OiAnQnJhbmRvbiBHcm90ZXNxdWUnO1xuXHRmb250LXdlaWdodDogNDAwO1xuXHRmb250LXN0eWxlOiBub3JtYWw7XG5cdHNyYzogdXJsKCcvZm9udHMvYnJhbmRvbi1ncm90ZXNxdWUvQnJhbmRvbi1SZWd1bGFyLm90ZicpO1xuXHRmb250LWRpc3BsYXk6IHN3YXA7XG59XG5cbkBmb250LWZhY2Uge1xuXHRmb250LWZhbWlseTogJ0JyYW5kb24gR3JvdGVzcXVlJztcblx0Zm9udC13ZWlnaHQ6IDQwMDtcblx0Zm9udC1zdHlsZTogaXRhbGljO1xuXHRzcmM6IHVybCgnLi4vcHVibGljL2ZvbnRzL2JyYW5kb24tZ3JvdGVzcXVlL0JyYW5kb24tSXRhbGljLm90ZicpO1xuXHRmb250LWRpc3BsYXk6IHN3YXA7XG59XG4vKlxuQGZvbnQtZmFjZSB7XG5cdGZvbnQtZmFtaWx5OiAnQnJhbmRvbiBHcm90ZXNxdWUnO1xuXHRmb250LXdlaWdodDogNzAwO1xuXHRmb250LXN0eWxlOiBub3JtYWw7XG5cdHNyYzogdXJsKCcuLi9wdWJsaWMvZm9udHMvYnJhbmRvbi1ncm90ZXNxdWUvQnJhbmRvbi1Cb2xkLm90ZicpO1xuXHRmb250LWRpc3BsYXk6IHN3YXA7XG59XG5NaXNzaW5nP1xuXG5AZm9udC1mYWNlIHtcblx0Zm9udC1mYW1pbHk6ICdCcmFuZG9uIEdyb3Rlc3F1ZSc7XG5cdGZvbnQtd2VpZ2h0OiA3MDA7XG5cdGZvbnQtc3R5bGU6IGl0YWxpYztcblx0c3JjOiB1cmwoJy4uL3B1YmxpYy9mb250cy9icmFuZG9uLWdyb3Rlc3F1ZS9CcmFuZG9uLUJvbGRJdGFsaWMub3RmJyk7XG5cdGZvbnQtZGlzcGxheTogc3dhcDtcbn1cbiovXG5AZm9udC1mYWNlIHtcblx0Zm9udC1mYW1pbHk6ICdCcmFuZG9uIEdyb3Rlc3F1ZSc7XG5cdGZvbnQtd2VpZ2h0OiA4MDA7XG5cdGZvbnQtc3R5bGU6IG5vcm1hbDtcblx0c3JjOiB1cmwoJy4uL3B1YmxpYy9mb250cy9icmFuZG9uLWdyb3Rlc3F1ZS9CcmFuZG9uLUJsYWNrLm90ZicpO1xuXHRmb250LWRpc3BsYXk6IHN3YXA7XG59XG5cbkBmb250LWZhY2Uge1xuXHRmb250LWZhbWlseTogJ0JyYW5kb24gR3JvdGVzcXVlJztcblx0Zm9udC13ZWlnaHQ6IDgwMDtcblx0Zm9udC1zdHlsZTogaXRhbGljO1xuXHRzcmM6IHVybCgnLi4vcHVibGljL2ZvbnRzL2JyYW5kb24tZ3JvdGVzcXVlL0JyYW5kb24tQmxhY2tJdGFsaWMub3RmJyk7XG5cdGZvbnQtZGlzcGxheTogc3dhcDtcbn1cblxuLyogTGFrZXNob3JlICovXG5cbkBmb250LWZhY2Uge1xuXHRmb250LWZhbWlseTogJ0xha2VzaG9yZSc7XG5cdGZvbnQtd2VpZ2h0OiA3MDA7XG5cdGZvbnQtc3R5bGU6IG5vcm1hbDtcblx0c3JjOiB1cmwoJy9mb250cy9sYWtlc2hvcmUvbGFrZXNob3JlLXJlZ3VsYXIudHRmJyk7XG5cdGZvbnQtZGlzcGxheTogc3dhcDtcbn1cblxuLyogSFRNTCBhbmQgQm9keSBTdHlsaW5nICovXG5cbmh0bWwsXG5ib2R5IHtcblx0LS10eXBlLWNvbG9yLWJhc2U6IHdoaXRlO1xuXHQtLWJhY2tncm91bmQtY29sb3ItYmFzZTogIzIyMjk1RTtcblx0LS1ob3QtZHVkZS1ob3QtcGluazogI0ZENTRGQjtcblx0LS1ob3QtZHVkZS1mdXNpYTogI0Y5NDU4ODtcbn1cblxuLyogQmFzZSBzdHlsZXMgKi9cblxuaHRtbCxcbmJvZHkge1xuXHRmb250LWZhbWlseTogJ0JyYW5kb24gR3JvdGVzcXVlJywgJ0FyaWFsJywgJ3NhbnMtc2VyaWYnO1xuXHRmb250LXdlaWdodDogNDAwO1xuXHRsZXR0ZXItc3BhY2luZzogMC4wNXJlbTtcblx0bGluZS1oZWlnaHQ6IDEuNTtcblx0Y29sb3I6IHZhcigtLXR5cGUtY29sb3ItYmFzZSk7XG5cdGJhY2tncm91bmQtY29sb3I6IHZhcigtLWJhY2tncm91bmQtY29sb3ItYmFzZSk7XG4gIG1hcmdpbjogMHB4O1xuICBwYWRkaW5nOiAwcHg7XG59XG5cbi8qIE5hdiBCYXIgKi9cbi5tYWluLWhlYWRlcntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgZ2FwOiAuNXJlbTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgaGVpZ2h0OiA0cmVtO1xufVxuXG4ubWFpbi1oZWFkZXIgPiBoMSB7XG4gIGZvbnQtc2l6ZToxLjVyZW07XG59XG5cbi5oZWFkZXItbmF2e1xuICBtYXJnaW4tbGVmdDogYXV0bztcbiAgbWFyZ2luLXJpZ2h0OiAxcmVtO1xufVxuXG4uaGVhZGVyLW5hdiA+IHVsIHtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xufVxuXG4ubGlzdC1pdGVte1xuICBwYWRkaW5nOiAxcmVtO1xuICBkaXNwbGF5OiAgaW5saW5lO1xuICAvKlxuICBib3JkZXItcmFkaXVzOiAyNXB4O1xuICAqL1xuICBmb250LXNpemU6IDEuM3JlbTtcbiAgbWFyZ2luLWxlZnQ6IC41ZW07XG59XG4ubGlzdC1pdGVtOmhvdmVye1xuICBjb2xvcjogI0Y5NDU4ODtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4vKiBIZWFkZXIgU3R5bGluZyAqL1xuLmhlYWQtdGV4dHtcbiAgZm9udC1mYW1pbHk6ICdCcmFuZG9uIEdyb3Rlc3F1ZSc7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIGxldHRlci1zcGFjaW5nOiAwLjI0cmVtO1xufVxuXG4uaDF7XG4gIGZvbnQtc2l6ZTogM3JlbTtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>/* Drop Shadow */
+.Home_stars__EmbvY {
+  /*
+	filter: drop-shadow(2px 4px 0px var(--hot-dude-fusia));
+  */
+}
+
+h1 > .Home_stars__EmbvY:before,
+h1 > .Home_stars__EmbvY:after {
+  content: ' ';
+  position: relative;
+  top: 7px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 1em;
+  height: 1em;
+  margin: 0 0.5rem;
+  background-image: url(/_next/static/media/star.0af28d36.svg);
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  background-position: center;
+}
+.Home_flexbox__sJJv5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home_flexbox__sJJv5 > h1 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.Home_drop-shadow__gU__t {
+	filter: drop-shadow(2px 4px 0px var(--hot-dude-fusia));
+}
+
+/* Initial Text */
+.Home_intro-blurb__X8C_o {
+  margin-top: 0px;
+  font-size: 1.8rem;
+  max-width: 100%;
+}
+
+/* Section 1 Background */
+.Home_header-1__4xu7V{
+  background-image: url(/_next/static/media/background-header@2x.a2f6ea2a.png);
+  background-size: 104% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  min-height: calc(min(100vw, 600px));
+  justify-content:  center;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zdHlsZXMvSG9tZS5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQUNoQjtFQUNFOztHQUVDO0FBQ0g7O0FBRUE7O0VBRUUsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IscUJBQXFCO0VBQ3JCLHdCQUF3QjtFQUN4QixVQUFVO0VBQ1YsV0FBVztFQUNYLGdCQUFnQjtFQUNoQix5REFBMkM7RUFDM0MsNEJBQTRCO0VBQzVCLHlCQUF5QjtFQUN6QiwyQkFBMkI7QUFDN0I7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixrQkFBa0I7QUFDcEI7O0FBRUE7Q0FDQyxzREFBc0Q7QUFDdkQ7O0FBRUEsaUJBQWlCO0FBQ2pCO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixlQUFlO0FBQ2pCOztBQUVBLHlCQUF5QjtBQUN6QjtFQUNFLHlEQUEyRDtFQUMzRCwwQkFBMEI7RUFDMUIsa0NBQWtDO0VBQ2xDLDRCQUE0Qjs7RUFFNUIsbUNBQW1DO0VBQ25DLHdCQUF3QjtBQUMxQiIsInNvdXJjZXNDb250ZW50IjpbIi8qIERyb3AgU2hhZG93ICovXG4uc3RhcnMge1xuICAvKlxuXHRmaWx0ZXI6IGRyb3Atc2hhZG93KDJweCA0cHggMHB4IHZhcigtLWhvdC1kdWRlLWZ1c2lhKSk7XG4gICovXG59XG5cbmgxID4gLnN0YXJzOmJlZm9yZSxcbmgxID4gLnN0YXJzOmFmdGVyIHtcbiAgY29udGVudDogJyAnO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogN3B4O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTtcbiAgd2lkdGg6IDFlbTtcbiAgaGVpZ2h0OiAxZW07XG4gIG1hcmdpbjogMCAwLjVyZW07XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vcHVibGljL3N0YXIuc3ZnJyk7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogYXV0byA3NSU7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbn1cbi5mbGV4Ym94e1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmZsZXhib3ggPiBoMSB7XG4gIGZvbnQtc2l6ZTogM3JlbTtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xufVxuXG4uZHJvcC1zaGFkb3cge1xuXHRmaWx0ZXI6IGRyb3Atc2hhZG93KDJweCA0cHggMHB4IHZhcigtLWhvdC1kdWRlLWZ1c2lhKSk7XG59XG5cbi8qIEluaXRpYWwgVGV4dCAqL1xuLmludHJvLWJsdXJiIHtcbiAgbWFyZ2luLXRvcDogMHB4O1xuICBmb250LXNpemU6IDEuOHJlbTtcbiAgbWF4LXdpZHRoOiAxMDAlO1xufVxuXG4vKiBTZWN0aW9uIDEgQmFja2dyb3VuZCAqL1xuLmhlYWRlci0xe1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL3B1YmxpYy9iYWNrZ3JvdW5kLWhlYWRlckAyeC5wbmcnKTtcbiAgYmFja2dyb3VuZC1zaXplOiAxMDQlIGF1dG87XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlciBib3R0b207XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG5cbiAgbWluLWhlaWdodDogY2FsYyhtaW4oMTAwdncsIDYwMHB4KSk7XG4gIGp1c3RpZnktY29udGVudDogIGNlbnRlcjtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><noscript id="__next_css__DO_NOT_USE__"></noscript></head><body><div id="__next" data-reactroot=""><header class="main-header"><div style="margin-left:2rem;"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%2780%27 height=%2750%27/%3e"></span><img alt="MLD Logo" src="crot_files/image_002.webp" decoding="async" data-nimg="intrinsic" class="main-log" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" srcset="crot_files/image.webp 1x, crot_files/image_002.webp 2x"></span></div><nav class="header-nav"><ul><li class="list-item">Home</li><li class="list-item">Services</li><li class="list-item">Courses</li><li class="list-item">Contact</li></ul></nav></header><div class="grid-wrapper"><section class="Home_flexbox__sJJv5 Home_header-1__4xu7V"><h1 class="h1 head-text"><span class="Home_stars__EmbvY Home_drop-shadow__gU__t">Modern Life Dating</span></h1><p class="Home_intro-blurb__X8C_o">Take part in the most important men's masculine improvement network</p></section><section class="Home_flexbox__sJJv5"><h1><span>Why Modern Life Dating?</span></h1><ul><li>🤝 Connect with other successful, like-minded men across the world</li><li>🌍 Network with fellow members of the Hot Dude Army</li><li>💸 Master the mindset of a multimillion-dollar earner</li><li>🔎 Receive top-secret masculinity education delivered by experts</li></ul></section><section class="Home_flexbox__sJJv5"><h1><span>Find Modern Life Dating @</span></h1><ul><li><a href="https://www.youtube.com/c/ModernLifeDatingChannel">Modern Life Dating</a></li><li><a href="https://www.instagram.com/hotdudelife/">@hotdudelife</a></li><li><a href="https://www.tiktok.com/@modernlifedating">@modernlifedating</a></li><li><a href="https://www.instagram.com/modernlifedating/">@modernlifedating</a></li><li><a href="https://www.facebook.com/ModernLifeDating/">@ModernLifeDating</a></li></ul></section><footer class="Home_flexbox__sJJv5"><span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%"><img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 version=%271.1%27 width=%27128%27 height=%27128%27/%3e"></span><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"><noscript><img srcSet="/_next/image?url=%2Fharambe.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fharambe.png&amp;w=256&amp;q=75 2x" src="/_next/image?url=%2Fharambe.png&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/></noscript></span><p class="pull-quote">“Decrease your judgement of others, increase your judgement of yourself.”</p><p class="copyright">© 2021 – Modern Life Dating</p><p class="shameless-plug">Powered by <a href="https://guavalabs.io/" target="_blank" rel="noopener noreferer">Guava Labs</a></p></footer></div></div><script src="crot_files/react-refresh.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"development","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script><div id="__next-build-watcher" style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"></div><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px none; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer></body></html>
