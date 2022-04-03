@@ -21,17 +21,11 @@ function MyApp({ Component, pageProps }) {
             <Link href="/">
               <li className='list-item'>Home</li>
             </Link>
-            <Link href="#services">
-              <li className='list-item'>Services</li>
-            </Link>
-            <Link href="#">
-              <li className='list-item'>Courses</li>
+            <Link href="/coaching">
+              <li className='list-item'>Coaching</li>
             </Link>
             <Link href="#">
               <li className='list-item'>Contact</li>
-            </Link>
-            <Link href="#">
-              <li className='list-item'>More</li>
             </Link>
           </ul>
         </nav>
